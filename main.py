@@ -5,8 +5,7 @@ from discord.ext import commands, tasks
 from keep_alive import keep_alive
 import os
 
-# ======================== CONFIG SECTION ========================
-TOKEN = os.environ.get ("DISCORD_BOT_TOKEN")  # Replace with your bot token
+TOKEN = os.getenv("DISCORD_TOKEN")
 GUILD_ID = 1245617853311356989  # Replace with your server ID
 CHANNEL_ID = 1381538971430944778  # The channel where trigger messages are monitored
 ROLE_NAME = "UM"  # Role to give and auto-remove
